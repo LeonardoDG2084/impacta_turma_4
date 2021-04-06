@@ -33,14 +33,23 @@
       - app.py
       - requirements.txt 
 
+  - name: checar imagem
+    command: "docker image ls | grep impacta"
+    register: docker_check
+  - debug: msg={{ docker_check }}
+
   - name: Construindo a imagem
     command: docker build -t impacta_app:1.0 .
     args:
        chdir: /root/
     register: docker_build
+    tags:
+      - docker-build
   
   - name: Executando o docker-compose
     command: docker-compose up -d
     args:
        chdir: /root/
     register: docker_compose_up
+    tags:
+      - docker-start

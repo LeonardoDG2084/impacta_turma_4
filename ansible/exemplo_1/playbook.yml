@@ -1,7 +1,6 @@
 - hosts: local
   gather_facts: True
 
-
   tasks:
   - name: System details
     shell: cat /etc/os-release
