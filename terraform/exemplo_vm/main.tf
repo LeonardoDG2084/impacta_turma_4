@@ -8,7 +8,7 @@ data "template_file" "user_data" {
 }
 
 resource "google_compute_instance" "webserver_instance" {
-  name = "webserver-server"
+  name = "webserver-server-${terraform.workspace}"
   machine_type = "e2-medium"
   zone = "us-central1-a"
   boot_disk {

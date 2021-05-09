@@ -1,0 +1,11 @@
+- hosts: local
+  gather_facts: False
+
+  tasks:
+  - name:
+    shell: "date -u"
+    register: linux_date
+
+  - name: Exibindo variaveis
+    debug: 
+      msg: "Data do sistema é {{ linux_date.stdout }}"

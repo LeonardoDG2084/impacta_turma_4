@@ -1,0 +1,4 @@
+---
+# vars file for webserver
+#
+nginx_html: "/var/www/html/index.html"

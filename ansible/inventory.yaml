@@ -6,10 +6,11 @@ all:
       mba: 'Impacta'
       turma: '04'
 
+
 local:
    vars:
-      var_do_inventory: 'Inv-Var'
-      lista_do_inventory:
+      var_do_inventario: 'Inv-Var'
+      lista_do_inventario:
         - "Fiat"
         - "VW"
         - "Ford" 
