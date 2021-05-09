@@ -5,3 +5,4 @@ impacta-turma-4.json
 gcp-compute-key
 .terraform
 .terraform*
+*.tfstate
