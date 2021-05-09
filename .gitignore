@@ -2,3 +2,7 @@
 *.log
 impacta-turma-4.json
 .backup
+gcp-compute-key
+.terraform
+.terraform*
+*.tfstate
