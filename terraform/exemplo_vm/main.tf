@@ -35,7 +35,7 @@ resource "google_compute_firewall" "webserver_firewall" {
 
   allow {
     protocol = "tcp"
-    ports    = ["8080"]
+    ports    = ["80"]
   }
 
   source_ranges = ["0.0.0.0/0"]

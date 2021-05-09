@@ -1,7 +1,8 @@
 variable "resource_tags" {
     type = map(string)
-    default = {
-    "carro" = "vermelho"
+    default = { 
+    "nome" = "Leonardo",
+    "turma" = "04"
     }
 }
 

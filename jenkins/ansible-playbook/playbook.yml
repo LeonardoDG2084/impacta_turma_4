@@ -42,6 +42,7 @@
           <p> Data Atual {{ ansible_date_time.iso8601 }} </p>
           <p> conteudo da instalacao do nginx: {{ var_nginx }} </p>
           <p> Conteudo da variavel response: {{ response.stdout }} </p>
+          <p> Conteudo da variavel response: {{ response.stdout }} </p>
   
   - name: Enable and start nginx service
     systemd:
