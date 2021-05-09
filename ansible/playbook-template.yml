@@ -1,0 +1,10 @@
+- hosts: local
+  vars:
+    var_do_playbook: 'Leonardo'
+    lista_do_playbook: ["Amarelo", "Vermelho", "Preto"]
+
+  tasks:
+     - name: Criando um template
+       template:
+         src: template.j2
+         dest: /tmp/template_impacta.txt

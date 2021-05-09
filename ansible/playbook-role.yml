@@ -1,0 +1,5 @@
+- name: Provisionamento webserver
+  hosts: local
+
+  roles:
+    - { role: webserver }
