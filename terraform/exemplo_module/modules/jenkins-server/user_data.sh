@@ -43,3 +43,4 @@ apt install docker.io -y
 systemctl start docker
 systemctl enable docker
 usermod -aG docker jenkins
+systemctl restart jenkins
