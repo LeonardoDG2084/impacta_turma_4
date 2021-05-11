@@ -39,4 +39,4 @@
 
     - name: Docker PS output
       debug: 
-         msg: {{ docker_ps }}
+         msg: "{{ docker_ps }}"
