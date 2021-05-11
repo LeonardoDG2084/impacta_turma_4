@@ -3,11 +3,12 @@ plugin: gcp_compute
 projects:
   -  impacta-turma-4
 auth_kind: serviceaccount
+service_account_file: ../impacta-turma-4.json
 keyed_groups:
   - key: labels
     prefix: label
   - key: zone
     prefix: zone
 groups:
-  ci: "'jenkins' in name"
-  server: "'webserver' in name"
+  ci: "'impacta-turma-4-prod' in name"
+  server: "'cobaia-prod' in name"
