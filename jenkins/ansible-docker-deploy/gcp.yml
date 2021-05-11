@@ -1,0 +1,13 @@
+---
+plugin: gcp_compute
+projects:
+  -  impacta-turma-4
+auth_kind: serviceaccount
+keyed_groups:
+  - key: labels
+    prefix: label
+  - key: zone
+    prefix: zone
+groups:
+  ci: "'jenkins' in name"
+  server: "'webserver' in name"

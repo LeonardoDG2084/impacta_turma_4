@@ -1,2 +1,2 @@
-environment = "qa"
-project = "jenkins-server"
+environment = "prod"
+project = "impacta-turma-4"
